@@ -39,17 +39,14 @@ npm install
 **Run the tests:**
 
 ```bash
-npx mocha tests --reporter mochawesome --timeout 60000
+npm run test
 ```
-
-**View the test report:**  
-Check the generated mochawesome-report folder for the HTML report.
 
 ## 📸 Test Report Screenshot
 
 Below is an example of the generated Mochawesome report after running the tests:
 
-![Test Report](images/test-report.png)
+![Test Report](images/report-result.png)
 
 The report includes detailed logs, assertions, and pass/fail status for each test case.
 

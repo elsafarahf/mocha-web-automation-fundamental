@@ -1,0 +1,17 @@
+{
+  "name": "mocha_web_fundamental",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "mocha tests/sorting.js --reporter mochawesome  --recursive --timeout 60000"
+  },
+  "author": "Elsa Farah Fauzia",
+  "description": "A fundamental web automation testing project built with Selenium WebDriver and Mocha",
+  "devDependencies": {
+    "mocha": "^11.7.4",
+    "mochawesome": "^7.1.4",
+    "selenium-webdriver": "^4.38.0"
+  },
+  "dependencies": {
+    "chromedriver": "^141.0.4"
+  }
+}

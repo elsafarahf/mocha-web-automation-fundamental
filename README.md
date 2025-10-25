@@ -12,14 +12,32 @@ This project automates end-to-end UI tests for the SauceDemo website, focusing o
 - ✅ Dropdown interaction and element visibility checks
 - ✅ Chrome browser options (e.g., Incognito mode to avoid password popups)
 
+## 📁 Project Structure
+
+```
+mocha_web_fundamental/
+│
+├── tests/
+│   └── sorting.js                           # Sorting functionality tests
+│
+├── images/
+│   └── report-result.png                    # Test report screenshot
+│
+├── package.json                             # Project metadata & npm scripts
+├── package-lock.json
+└── README.md                                # Project documentation
+```
+
 ## ⚙️ Tech Stack
 
-**Language:** JavaScript (Node.js)  
-**Framework:** Mocha  
-**Assertion Library:** Assert  
-**WebDriver:** Selenium WebDriver  
-**Browser:** Google Chrome  
-**Report:** Mochawesome
+| Tool                   | Purpose                                  |
+| :--------------------- | :--------------------------------------- |
+| **JavaScript (ES6)**   | Test scripting language                  |
+| **Selenium WebDriver** | Browser automation framework             |
+| **Mocha**              | Test runner                              |
+| **Mochawesome**        | Test reporting                           |
+| **Node.js + npm**      | Runtime environment & package management |
+| **ChromeDriver**       | Web UI execution engine                  |
 
 ## 🚀 How to Run the Tests
 
@@ -49,6 +67,16 @@ Below is an example of the generated Mochawesome report after running the tests:
 ![Test Report](images/report-result.png)
 
 The report includes detailed logs, assertions, and pass/fail status for each test case.
+
+## 🧠 Key Learning Points
+
+- Setting up Chrome WebDriver with incognito mode
+- Using Mocha test framework with async/await functions
+- Element selection with `By.id`, `By.className`, and `By.xpath`
+- Dropdown interaction and attribute validation
+- Helper functions for code reusability (`setupDriver`, `login`, `selectSort`)
+- Assertion testing with `assert.strictEqual`
+- Browser session management with `driver.quit()`
 
 ## 👩🏻‍💻 Author
 

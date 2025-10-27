@@ -80,7 +80,7 @@ Each test includes dropdown interaction and selection validation using `assert.s
 
 Below is an example of the generated Mochawesome report after running the tests:
 
-![Test Report](images/report-result.png)
+![Test Report](report/report-result.png)
 
 ## 🧠 Key Learning Points
 

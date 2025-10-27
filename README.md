@@ -60,13 +60,20 @@ npm install
 npm run test
 ```
 
+## 🧪 Test Scenarios
+
+**1. Sort by Name A to Z (default)** - Tests default alphabetical sorting with login verification
+**2. Sort by Name Z to A** - Tests reverse alphabetical sorting
+**3. Sort by Price Low to High** - Tests price ascending order
+**4. Sort by Price High to Low** - Tests price descending order with browser cleanup
+
+Each test includes dropdown interaction and selection validation using `assert.strictEqual`.
+
 ## 📸 Test Report Screenshot
 
 Below is an example of the generated Mochawesome report after running the tests:
 
 ![Test Report](images/report-result.png)
-
-The report includes detailed logs, assertions, and pass/fail status for each test case.
 
 ## 🧠 Key Learning Points
 

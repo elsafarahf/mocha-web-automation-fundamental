@@ -27,11 +27,13 @@ describe("Saucedemo Sorting Tests", function () {
   }
 
   async function selectSort(value) {
-    const dropdown = await driver.findElement(
-      By.className("product_sort_container")
-    );
-    await dropdown.click();
-    await driver.findElement(By.xpath(`//option[@value="${value}"]`)).click();
+    const dropdown = await driver
+      .findElement(By.className("product_sort_container"))
+      .click();
+
+    const selectedOption = await driver
+      .findElement(By.xpath(`//option[@value="${value}"]`))
+      .click();
 
     const updatedDropdown = await driver.findElement(
       By.className("product_sort_container")
@@ -44,26 +46,17 @@ describe("Saucedemo Sorting Tests", function () {
     await setupDriver();
     await login();
     await selectSort("az");
-    await driver.quit();
   });
 
   it("Sort by Name Z to A", async function () {
-    await setupDriver();
-    await login();
     await selectSort("za");
-    await driver.quit();
   });
 
   it("Sort by Price Low to High", async function () {
-    await setupDriver();
-    await login();
     await selectSort("lohi");
-    await driver.quit();
   });
 
   it("Sort by Price High to Low", async function () {
-    await setupDriver();
-    await login();
     await selectSort("hilo");
     await driver.quit();
   });

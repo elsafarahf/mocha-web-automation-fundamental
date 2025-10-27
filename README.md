@@ -69,6 +69,13 @@ npm run test
 
 Each test includes dropdown interaction and selection validation using `assert.strictEqual`.
 
+## 🔧 Test Architecture
+
+### Helper Functions
+
+- **`login()`** - Handles authentication and logo verification
+- **`selectSort(value)`** - Manages dropdown interaction and sorting validation
+
 ## 📸 Test Report Screenshot
 
 Below is an example of the generated Mochawesome report after running the tests:

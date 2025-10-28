@@ -73,8 +73,9 @@ Each test includes dropdown interaction and selection validation using `assert.s
 
 ### Helper Functions
 
+- **`setupDriver()`** - Initializes Chrome WebDriver with incognito mode
 - **`login()`** - Handles authentication and logo verification
-- **`selectSort(value)`** - Manages dropdown interaction and sorting validation
+- **`selectSort(value)`** - Manages dropdown interaction, sorting selection, and validation
 
 ## 📸 Test Report Screenshot
 
@@ -89,6 +90,8 @@ Below is an example of the generated Mochawesome report after running the tests:
 - Element selection with `By.id`, `By.className`, and `By.xpath`
 - Dropdown interaction and attribute validation
 - Helper functions for code reusability (`setupDriver`, `login`, `selectSort`)
+- Actual sorting verification by checking product names and prices order
+- Loop-based data extraction from web elements
 - Assertion testing with `assert.strictEqual`
 - Browser session management with `driver.quit()`
 
